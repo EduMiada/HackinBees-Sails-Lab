@@ -17,3 +17,31 @@ Lab Sails JS 1.0 - Utilizando Passport com estratégia local e geração de Toke
 + Clonar repositório
 + Instalar dependências no diretório da aplicação
 
+### Criar usuários
+http://localhost:1337/auth/signup
+{
+ "username":"teste",
+ "email":"teste@teste.com",
+ "password":"teste"
+}
+
+
+### Criar usuários
+http://localhost:1337/auth/signup
+{
+ "username":"teste",
+ "email":"teste@teste.com",
+ "password":"teste"
+}
+
+### Login
+http://localhost:1337/auth/signin
+{
+  "email": "teste@teste.com",
+  "password": "teste"
+}
+
+### Acesso página segura
+http://localhost:1337/user
+Header: Authorization:Bearer JWT
+Content-Type:application/json
